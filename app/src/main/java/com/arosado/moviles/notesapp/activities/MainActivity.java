@@ -1,19 +1,20 @@
 package com.arosado.moviles.notesapp.activities;
 
 import android.content.Intent;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.arosado.moviles.notesapp.R;
 import com.arosado.moviles.notesapp.adapters.NotesAdapter;
 import com.arosado.moviles.notesapp.models.Note;
 import com.arosado.moviles.notesapp.repositories.NoteRepository;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;
 
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("Notas");
 
         infoText = findViewById(R.id.info_text);
         notesList = findViewById(R.id.notes_list);

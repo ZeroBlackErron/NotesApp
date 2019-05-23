@@ -1,15 +1,15 @@
 package com.arosado.moviles.notesapp.activities;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.arosado.moviles.notesapp.R;
-import com.arosado.moviles.notesapp.models.User;
 import com.arosado.moviles.notesapp.repositories.UserRepository;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -30,7 +30,7 @@ public class RegisterActivity extends AppCompatActivity {
         full_nameInput = findViewById(R.id.full_name_register_input);
         emailInput = findViewById(R.id.email_register_input);
         passwordInput = findViewById(R.id.password_register_input);
-        registerButton = findViewById(R.id.register_button);
+        registerButton = findViewById(R.id.go_to_register_button);
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override

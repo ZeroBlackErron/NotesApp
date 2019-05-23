@@ -1,21 +1,23 @@
 package com.arosado.moviles.notesapp.activities;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.arosado.moviles.notesapp.R;
 import com.arosado.moviles.notesapp.models.User;
 import com.arosado.moviles.notesapp.repositories.UserRepository;
+import com.google.android.material.textfield.TextInputEditText;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private EditText nicknameInput;
-    private EditText passwordInput;
+    private TextInputEditText nicknameInput;
+    private TextInputEditText passwordInput;
     private Button loginButton;
 
     @Override
